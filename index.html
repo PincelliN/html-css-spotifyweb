@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="Icon" type="image /x-icon" href="img/favicon.ico" />
     <title>Spotify</title>
   </head>
   <body>
@@ -24,96 +25,186 @@
       <nav>
         <!--  lista con logo  list page and playlist -->
         <div class="container">
+          <div>
+            <div class="logo">
+              <img src="img/favicon.ico" alt="logo" />
+              <span>Spotify</span>
+            </div>
+            <ul>
+              <li><i class="fa-solid fa-house"></i>Home</li>
+              <li><i class="fa-solid fa-magnifying-glass"></i>Cerca</li>
+              <li>
+                <i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i> La
+                tua libreria
+              </li>
+            </ul>
+            <ul>
+              <li>Playlist</li>
+              <li><i class="fa-solid fa-square-plus"></i>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+              <li>Nuova Playlist</li>
+            </ul>
+          </div>
+          <!--  link dowload app account -->
+          <div class="profile">
+            <i class="fa-regular fa-circle-down"></i><span>installa app</span>
+            <hr />
             <div>
-                <div class="logo">
-                    <img src="img/favicon.ico" alt="logo" />
-                    <span>Spotify</span>
-                </div>
-                 <ul>
-                    <li><i class="fa-solid fa-house"></i>Home</li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i>Cerca</li>
-                    <li>
-                    <i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i> La
-                    tua libreria
-                    </li>
-                 </ul>
-                 <ul>
-                    <li>Playlist</li>
-                    <li><i class="fa-solid fa-square-plus"></i>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                 </ul>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10%"
+                hight="10%"
+                viewBox="0 0 80 90"
+              >
+                <title>User Icon</title>
+                <path
+                  d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
+                  fill="white"
+                  fill-rule="red"
+                />
+              </svg>
+              <span>John Doe</span>
             </div>
-                <!--  link dowload app account -->
-            <div class="profile">
-                <i class="fa-regular fa-circle-down"></i><span>installa app</span>
-                <hr>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10%" hight="10%"  viewBox="0 0 80 90"><title>User Icon</title><path d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z" fill="white" fill-rule="red"/></svg>
-                    <span>John Doe</span>
-                </div>
-            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
       <main>
-        <section class="upgrade"></section>
-        <section class="music"></section>
+        <section class="upgrade">
+          <p>EFFETTUA L'UPGRADE</p>
+        </section>
+        <section class="music">
+          <div class="container">
+            <section class="music-page">
+              <ul>
+                <li>IN EVIDENZIA</li>
+                <li>PODCAST</li>
+                <li>CLASSIFICHE</li>
+                <li>GENERI E MOOD</li>
+                <li>NUOVE USCITE</li>
+                <li>SCOPRI</li>
+              </ul>
+            </section>
+            <section class="recently-play">
+              <h2>Recently played</h2>
+              <section>
+                <div class="card">
+                  <img src="img/metal_lifting.jpg" alt="metal" />
+                  <h3>Heavy Metal</h3>
+                  <p>Subtitle</p>
+                </div>
+                <div class="card">
+                  <img src="img/stranger.jpeg" alt="metal" />
+                  <h3>
+                    Stranger thing,vol.1(a Netflix Original Series Soundtrack)
+                  </h3>
+                  <p>Kile Dixon & Michael Stein</p>
+                </div>
+                <div class="card">
+                  <img src="img/aquietplace.jpeg" alt="metal" />
+                  <h3>A quiet place</h3>
+                  <p>Subtitle</p>
+                </div>
+                <div class="card">
+                  <img src="img/split.jpeg" alt="metal" />
+                  <h3>Split</h3>
+                  <p>Subtitle</p>
+                </div>
+                <div class="card">
+                  <img src="img/cure.jpeg" alt="metal" />
+                  <h3>A cure of wellness</h3>
+                  <p>Subtitle</p>
+                </div>
+                <div class="card">
+                  <img src="img/sinister.jpeg" alt="metal" />
+                  <h3>Sinister</h3>
+                  <p>Subtitle</p>
+                </div>
+              </section>
+            </section>
+            <section class="for-you">
+              <h2>Creato per John Doe</h2>
+              <p>Più ascolti,più accurati saranno</p>
+              <section>
+                <div class="card">
+                  <img src="img/radar.jpeg" alt="radar" />
+                  <h2>Realese radar</h2>
+                </div>
+                <div class="card">
+                  <img src="img/mixdaily.jpeg" alt="Daily mix" />
+                  <h2>Daily mix</h2>
+                </div>
+              </section>
+            </section>
+            <section class="most-popular">
+              <h2>Artisti più popolari</h2>
+              <p>Più ascolti,più accurati saranno i suggerimenti</p>
+              <section>
+                <div class="card">
+                  <img src="img/youg.jpeg" alt="lana del rei" />
+                  <h3>Lana del Rei</h3>
+                </div>
+                <div class="card">
+                  <img src="img/einaudi.jpeg" alt="Einaudi" />
+                  <h3>Einaudi</h3>
+                </div>
+              </section>
+            </section>
+          </div>
+        </section>
       </main>
     </section>
     <!-- play bar -->
     <section class="play">
       <div class="container">
-         <!-- img band name band prefer and save -->
-            <section class="band">
-                <img src="img/sinister.jpeg" alt="cover album">
-                <div>
-                    <h4>Sinister</h4>
-                    <p>Brano Nome</p>
-                </div>
-                <ul>
-                    <li><i class="fa-regular fa-heart"></i></li>
-                    <li><i class="fa-regular fa-folder"></i></li>
-                </ul>
-            </section>
-            <!-- tools and bar -->
-            <section class="play-button">
-                <div class="play-button-tools">
-                    <ul>
-                        <li><i class="fa-solid fa-shuffle"></i></li>
-                        <li><i class="fa-solid fa-backward-step"></i></li>
-                        <li><i class="fa-regular fa-circle-play"></i></li>
-                        <li><i class="fa-solid fa-forward-step"></i></li>
-                        <li><i class="fa-solid fa-rotate-right"></i></li>
-                    </ul>
-                </div>
-                <div class="bar">
-                    <div class="duration">
-                        0.35
-                    </div>
-                    <div class="duration-bar"> 
-                        <input type="range" min="1" max="10" value="7" name="Rage" >
-                    </div>
-                    <div class="duration">
-                        4:35
-                    </div>
-                </div>
-            </section>
-            <!-- librery desktop vol and bar -->
-            <section class="vol">
-                <ul>
-                    <li><i class="fa-solid fa-list-ul"></i></li>
-                    <li><i class="fa-solid fa-desktop"></i></li>
-                    <li><i class="fa-solid fa-volume-high"></i></li>
-                    <li> <input type="range" name="vol" min="0" max="100" value="35"></li>
-                </ul>
-            </section>
+        <!-- img band name band prefer and save -->
+        <section class="band">
+          <img src="img/sinister.jpeg" alt="cover album" />
+          <div>
+            <h4>Sinister</h4>
+            <p>Brano Nome</p>
+          </div>
+          <ul>
+            <li><i class="fa-regular fa-heart"></i></li>
+            <li><i class="fa-regular fa-folder"></i></li>
+          </ul>
+        </section>
+        <!-- tools and bar -->
+        <section class="play-button">
+          <div class="play-button-tools">
+            <ul>
+              <li><i class="fa-solid fa-shuffle"></i></li>
+              <li><i class="fa-solid fa-backward-step"></i></li>
+              <li><i class="fa-regular fa-circle-play"></i></li>
+              <li><i class="fa-solid fa-forward-step"></i></li>
+              <li><i class="fa-solid fa-rotate-right"></i></li>
+            </ul>
+          </div>
+          <div class="bar">
+            <div class="duration">0.35</div>
+            <div class="duration-bar">
+              <input type="range" min="1" max="10" value="7" name="Rage" />
+            </div>
+            <div class="duration">4:35</div>
+          </div>
+        </section>
+        <!-- librery desktop vol and bar -->
+        <section class="vol">
+          <ul>
+            <li><i class="fa-solid fa-list-ul"></i></li>
+            <li><i class="fa-solid fa-desktop"></i></li>
+            <li><i class="fa-solid fa-volume-high"></i></li>
+            <li>
+              <input type="range" name="vol" min="0" max="100" value="35" />
+            </li>
+          </ul>
+        </section>
       </div>
     </section>
   </body>
