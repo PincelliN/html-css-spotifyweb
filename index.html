@@ -1,19 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Spoty</title>
+  </head>
+  <body>
     <section class="main-body">
-        <nav></nav>
-        <main>
-            <section class="upgrade"></section>
-            <section class="music"></section>
-        </main>
+      <nav>
+        <!--  lista con logo  list page and playlist -->
+        <div>
+          <img src="img/favicon.ico" alt="logo" />
+          <ul>
+            <li><i class="fa-solid fa-house"></i>Home</li>
+            <li><i class="fa-solid fa-magnifying-glass"></i>Cerca</li>
+            <li>La tua libreria</li>
+          </ul>
+        </div>
+        <!--  link dowload app account -->
+        <div>
+            <i class="fa-regular fa-circle-down"></i>
+        </div>
+      </nav>
+      <main>
+        <section class="upgrade"></section>
+        <section class="music"></section>
+      </main>
     </section>
-    <section class="play"></section>
-</body>
+    <section class="play">
+        <!-- img band name band prefer and save -->
+        <section class="band">
+            <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-folder"></i></li>
+            </ul>
+        </section>
+        <!-- tools and bar -->
+        <section class="play-button">
+            <div class="play-button-tools">
+                <ul>
+                    <li><i class="fa-solid fa-shuffle"></i></li>
+                    <li><i class="fa-solid fa-backward-step"></i></li>
+                    <li><i class="fa-regular fa-circle-play"></i></li>
+                    <li><i class="fa-solid fa-forward-step"></i></li>
+                    <li><i class="fa-solid fa-rotate-right"></i></li>
+                </ul>
+            </div>
+            <div class="bar"></div>
+        </section>
+        <!-- librery desktop vol and bar -->
+        <section class="vol">
+            <ul>
+                <li><i class="fa-solid fa-list-ul"></i></li>
+                <li><i class="fa-solid fa-desktop"></i></li>
+                <li><i class="fa-solid fa-volume-high"></i></li>
+                <li></li>
+            </ul>
+        </section>
+    </section>
+  </body>
 </html>
