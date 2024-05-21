@@ -1,0 +1,32 @@
+@media screen and (min-width: 568px) {
+    :root{
+    --first:white;
+    --second:grey;
+}
+  .mobile{
+    display: none;
+  }
+  .no-mobile{
+    display: block;
+   text-align: start;
+   
+  }
+   main>.sidenav{
+    width: 25%;
+}
+.sidenav h4{
+    color:var(--first);
+    margin-bottom: 5%;
+}
+.sidenav h5+ul{
+    height: 20%;
+    overflow: auto;
+}
+  main>.music{
+    width: 75%;
+}
+header{
+    width: 75%;
+}
+} 
+    

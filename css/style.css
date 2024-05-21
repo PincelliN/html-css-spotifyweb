@@ -7,7 +7,12 @@
     --first:white;
     --second:grey;
 }
+body{
+    min-width: 470px;
+    min-height: 203px;
+}
 main{
+    
     height: 80vh;
     width: 100%;
     display: flex;
@@ -21,7 +26,7 @@ footer{
     bottom: 0;
     z-index: 2;
     color: var(--first);
-    background-color: black;
+    background-color:rgb(40, 40, 40);
 }
 ul{
     list-style: none;
@@ -31,6 +36,9 @@ ul{
     height: 100%;
     width: 90%;
 }
+.no-mobile{
+    display: none;
+}
 /* sidenav */
  main>.sidenav{
     width: 5%;
@@ -38,13 +46,17 @@ ul{
     text-align: center;
 }
 .sidenav>.container{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.sidenav .fa-spotify{
-    color: white;
-    width: max-content;
+.sidenav h1{
+    color: var(--first);
+    margin-top: 5%;
+}
+.sidenav .fa-solid{
+    margin-right: 5%;
 }
 main>.music{
     width: 95%;
@@ -60,7 +72,7 @@ main>.music{
 }
 /* Header */
 header{
-    width: 90%;
+    width: 95%;
     height: 50px;
     text-align: end;
     padding-top: 3%;
@@ -76,10 +88,14 @@ header span{
     padding: 5px;
 }
 /*  music */
+.music{
+        background-color:rgb(20, 25, 34) ;
+}
 .music>.container{
     height: 100%;
     overflow-y: auto;
     color: var(--second);
+
 }
 .music>.container>*{
     margin-bottom: 5%;
