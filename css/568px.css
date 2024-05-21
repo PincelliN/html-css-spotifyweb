@@ -12,21 +12,38 @@
    
   }
    main>.sidenav{
-    width: 25%;
+    width: 200px;
+}
+.sidenav h1 + ul>li:first-child{
+    color: var(--first);
 }
 .sidenav h4{
     color:var(--first);
     margin-bottom: 5%;
 }
 .sidenav h5+ul{
-    height: 20%;
+    height: 80%;
     overflow: auto;
 }
+.fa-square-plus{
+    font-size: xx-large;
+}
+.sidenav h5>i{
+    vertical-align: sub;
+} 
+.sidenav svg +span{
+    color: var(--first);
+    vertical-align: super;
+}
   main>.music{
-    width: 75%;
+    width: calc(100% - 200px);
 }
 header{
-    width: 75%;
+    width: calc(100% - 200px);
+}
+.music>.container>ul>li{
+    width: calc(100% / 3 - 10px );
+    font-size: small;
 }
 } 
     

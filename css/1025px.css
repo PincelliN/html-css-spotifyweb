@@ -1,4 +1,17 @@
 @media  screen and (min-width: 1025px) {
-
+ 
+ .music>.container>ul{
+        width: 80%;
+        margin: 60px auto;
+        flex-wrap: nowrap;
+    
+}  
+.music>.container>ul>li{
+    font-size: x-small;
+}
+.card {
+    width: 11%;
+    font-size: small;
+  }
 } 
     

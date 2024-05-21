@@ -7,20 +7,17 @@
     --first:white;
     --second:grey;
 }
-body{
-    min-width: 470px;
-    min-height: 203px;
-}
 main{
     
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     background-color: black;
 }
 footer{
-    height: 20vh;
+    min-height: 60px;
+    height: 10vh;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -51,6 +48,7 @@ ul{
     flex-direction: column;
     justify-content: space-between;
 }
+
 .sidenav h1{
     color: var(--first);
     margin-top: 5%;
@@ -62,30 +60,42 @@ main>.music{
     width: 95%;
 }
 .sidenav li{
-    margin: 10% auto;
+    margin: 3% auto;
 }
 /* profile */
+.profile{
+    margin-bottom: 10px;
+}
+.profile hr{
+    margin-top: 10px;
+}
 .profile svg{
     background-color: var(--second);
     border-radius: 50%;
-    margin-top: 10%;
+    margin-top: 10px;
 }
 /* Header */
 header{
     width: 95%;
     height: 50px;
     text-align: end;
-    padding-top: 3%;
     background-color: rgba(255, 255, 255, 0.1);
     position: fixed;
     top: 0;
      right: 0;
+}
+header .container{
+    height: 100%;
+    vertical-align: auto;
+    padding-right: 20px; 
+    align-content: center;
 }
 header span{
     color: white;
     border:1px solid white;
     border-radius: 25px;
     padding: 5px;
+   
 }
 /*  music */
 .music{
@@ -98,18 +108,19 @@ header span{
 
 }
 .music>.container>*{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 .music>.container>ul{
-    margin-top: 50px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
-.music>.container>li{
+.music>.container>ul>li{
     width: calc(100% / 4 - 10px );
+    font-size: x-small;
 }
 .recently,
 .mix,
@@ -118,12 +129,12 @@ header span{
     flex-wrap: wrap;
 }
 .card{
-    margin: 4%;
+    margin: 18px;
     width: 40%;
     text-align: center;
 }
 .card>*{
-    margin: 5% auto;
+    margin: 3% auto;
 }
 .card>img{
     width: 100%;
@@ -174,7 +185,7 @@ footer .playing h4{
     display: flex;
     flex-direction: column;
     color: var(--second);
-    margin-right: 5%;
+    margin-right: 2%;
 }
 /* play section */
 .play{
