@@ -121,6 +121,8 @@ header span{
 .music>.container>ul>li{
     width: calc(100% / 4 - 10px );
     font-size: x-small;
+    text-align: center;
+    
 }
 .recently,
 .mix,
@@ -159,6 +161,15 @@ header span{
 .music>.container h2,
 .music>.container h4{
     color: var(--first);
+}
+li>hr{
+    margin: 0 auto;
+    width: 30%;
+    border: 1px solid greenyellow;
+    display: none;
+}
+.music>.container>ul>li:active hr{
+    display: block;
 }
 
 
