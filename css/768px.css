@@ -7,4 +7,16 @@
     width: 18%;
     font-size: small;
   }
+  .playing .prefer{
+    display: inline-block;
+    margin-left: 10px;
+    color: var(--second); 
+}
+.playing .prefer>*{
+  margin: 3px;
+  font-size: small;
+}
+.vol{ 
+    gap: 10px;  
+}
 }

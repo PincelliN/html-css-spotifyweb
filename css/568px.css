@@ -14,9 +14,7 @@
    main>.sidenav{
     width: 200px;
 }
-.sidenav h1 + ul>li:first-child{
-    color: var(--first);
-}
+
 .sidenav h4{
     color:var(--first);
     margin-bottom: 5%;
@@ -45,5 +43,12 @@ header{
     width: calc(100% / 3 - 10px );
     font-size: small;
 }
+   .card {
+    width: 38%;   
+  }
+  .playing .prefer,
+  footer .playing img+div{
+    font-size: xx-small;  
+}   
 } 
     
