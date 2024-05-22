@@ -58,7 +58,7 @@ ul{
 }
 .sidenav h1 + ul>li:first-child{
     color: var(--first);
-    border-left: 2px solid greenyellow;
+    border-left: 3px solid greenyellow;
 }
 main>.music{
     width: 95%;
@@ -69,6 +69,12 @@ main>.music{
 /* profile */
 .profile{
     margin-bottom: 10px;
+}
+.profile .fa-circle-down{
+    color: var(--first);
+}
+.profile .fa-circle-down+span{
+    cursor: pointer;
 }
 .profile hr{
     margin-top: 10px;
@@ -200,34 +206,120 @@ footer .playing h4{
     gap: 5px;
 }
 /* play section */
-.play{
+.row{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-size: small;
 }   
-footer .play>li{
+footer .row>li{
     display: inline-block;
     margin:2px;
     width: calc(100% / 5 - 4px);
     text-align: center;
 }
-footer .play>.bar{
-    min-width:calc(100% / 5 - 4px);
+footer .bar>li:nth-child(2){
+     width:calc((100% / 5 - 4px)* 2); 
     flex-grow: 1;
-}
-.bar>input{
-    width: 100%;
+    width: 100%; 
 }
 .play .fa-regular{
     font-size: large;
 }
+
+
+
+
+
+input[type='range']{
+    height: 5px;
+    appearance:auto;
+    accent-color:black ;
+    filter: invert(0.8);
+}
+.point:hover{
+    accent-color:rgb(192, 5, 192);
+}
+
+
+
+
+
+
+
+
+
+/*   input[type=range] {
+      overflow: hidden;
+      width: 80px;
+      appearance: auto;
+      background-color: rgb(70, 70, 70);
+      accent-color: white;
+      border-radius: 25px;
+      height: 5px;
+    }
+     
+     input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      border-radius: 100%;
+     appearance: auto;
+      color: red;
+      margin-top: -1px;
+    } 
+    
+    input[type='range']::-webkit-slider-thumb {
+       width: 10px; 
+      appearance: none;
+      border-radius: 25px;
+      height: 50px;
+      cursor: ew-resize;
+      
+       box-shadow: -80px 0 0 80px grey; 
+    }   */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  vol */
+footer .last{
+    display: flex;
+    justify-content: flex-end;
+}
 .vol{
     display: flex; 
-    justify-content: flex-end;
+    justify-content: center;
     gap: 5px;  
+}
+.vol:last-child{
+    width: 80%;
 }
 .vol input{
     width: 100%;
@@ -236,21 +328,21 @@ footer .play>.bar{
 .card:hover .play-music{
     display: block;
 }
-.no-mobile>ul>li:hover{
+.no-mobile>ul>li:hover,
+.no-mobile>h5:hover,
+.music>.container>ul>li:hover,
+.profile .fa-circle-down+span:hover,
+.playing h4:hover,
+.playing .prefer>i:hover
+{
     color: var(--first);
     cursor: pointer;
 }
-.no-mobile>h5:active{
-    color: var(--first);
-    cursor: pointer;
-}
-.no-mobile .fa-circle-down:active{
-    color: var(--first);
-    cursor: pointer;
-}
-.music>.container>ul>li:hover{
-    color: var(--first);
-}
-header span:hover{
+
+header span:hover,
+.play .row>li>.fa-regular:hover{
     zoom: 1.1;
+}
+.profile svg:hover{
+    background-color: lightgrey;
 }
