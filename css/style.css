@@ -80,14 +80,7 @@ main > .music {
     margin: 3% 0;
 }
 .sidenav .playlist{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-    min-height: 40px;
-     overflow: auto;
-     flex-shrink: 2;
-     flex-grow: 2;
-
+  display: none;
 }
 /* profile */
 .profile {

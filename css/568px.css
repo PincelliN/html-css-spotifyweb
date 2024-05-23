@@ -1,55 +1,61 @@
 @media screen and (min-width: 568px) {
-    :root{
-    --first:white;
-    --second:grey;
-}
-  .mobile{
+  :root {
+    --first: white;
+    --second: grey;
+  }
+  .mobile {
     display: none;
   }
-  .no-mobile{
+  .no-mobile {
     display: block;
-   text-align: start;
-   
+    text-align: start;
   }
-   main>.sidenav{
+  main > .sidenav {
     width: 200px;
-}
+  }
 
-.sidenav h4{
-    color:var(--first);
+  .sidenav h4 {
+    color: var(--first);
     margin-bottom: 5%;
-}
-.sidenav h5+ul{
-   /*  height: 80%; */
+  }
+  .sidenav h5 + ul {
+    /*  height: 80%; */
     overflow: auto;
-}
-.fa-square-plus{
+  }
+  .sidenav .playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 40px;
+    overflow: auto;
+    flex-shrink: 2;
+    flex-grow: 2;
+  }
+  .fa-square-plus {
     font-size: xx-large;
-}
-.sidenav h5>i{
+  }
+  .sidenav h5 > i {
     vertical-align: sub;
-} 
-.sidenav svg +span{
+  }
+  .sidenav svg + span {
     color: var(--first);
     vertical-align: super;
-}
-  main>.music{
+  }
+  main > .music {
     width: calc(100% - 200px);
-}
-header{
+  }
+  header {
     width: calc(100% - 200px);
-}
-.music>.container>ul>li{
-    width: calc(100% / 3 - 10px );
+  }
+  .music > .container > ul > li {
+    width: calc(100% / 3 - 10px);
     font-size: small;
-}
-   .card {
-    width: 38%;   
+  }
+  .card {
+    width: 38%;
   }
   .playing .prefer,
-  footer .playing img+div{
-    font-size: xx-small;  
-}   
-
-} 
-    
+  footer .playing img + div {
+    font-size: xx-small;
+  }
+}
